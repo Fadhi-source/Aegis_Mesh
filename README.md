@@ -21,6 +21,8 @@
 
 AegisMesh ships with a zero-dependency, pure glassmorphism front-end mounted directly into the Gateway API. Type queries naturally into the terminal, observe telemetry streams, and watch the Supervisor construct its Causal Confidence Dial in real-time.
 
+![AegisMesh User Interface](docs/assets/screenshot.png)
+
 ---
 
 ## ⚙️ Quick Start
