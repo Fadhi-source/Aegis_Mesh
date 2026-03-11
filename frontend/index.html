@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AegisMesh | Sovereign Diagnostic Intelligence</title>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="mesh-background">
+        <div class="grid-overlay"></div>
+        <div class="glow glow-1"></div>
+        <div class="glow glow-2"></div>
+    </div>
+
+    <header class="app-header">
+        <div class="logo">
+            <div class="logo-icon">▲</div>
+            <h1>AegisMesh <span>Terminal</span></h1>
+        </div>
+        <div class="status-badge" id="backend-status">
+            <span class="status-dot healthy"></span>
+            Node: 127.0.0.1:9000
+        </div>
+    </header>
+
+    <main class="dashboard">
+        <!-- Main Chat/Terminal Panel -->
+        <section class="terminal-panel panel glass">
+            <div class="panel-header">
+                <h2>Causal Diagnostic Input</h2>
+                <span class="subtext">Awaiting Query...</span>
+            </div>
+            
+            <div class="chat-history" id="chat-history">
+                <div class="message system">
+                    <div class="avatar">▲</div>
+                    <div class="content">
+                        <p>AegisMesh v1.4.0 Autonomous Diagnostic Mesh initialized.</p>
+                        <p>Environment: 16GB RAM / Local Process Boundary.</p>
+                        <p class="prompt-instruction">Describe the anomaly you are experiencing below.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="input-area">
+                <textarea id="query-input" placeholder="E.g., My computer is extremely slow and I suspect memory is full..." rows="2"></textarea>
+                <button id="send-btn" class="cyber-btn"><span>Investigate</span> <span class="arrow">→</span></button>
+            </div>
+        </section>
+
+        <!-- Sidebar Telemetry/Graph Panel -->
+        <aside class="telemetry-panel">
+            <div class="confidence-meter panel glass">
+                <h3>Causal Graph Confidence</h3>
+                <div class="circular-progress">
+                    <svg viewBox="0 0 100 100">
+                        <circle class="bg" cx="50" cy="50" r="45"></circle>
+                        <circle class="meter" id="confidence-meter" cx="50" cy="50" r="45" stroke-dasharray="283" stroke-dashoffset="283"></circle>
+                    </svg>
+                    <div class="meter-value" id="confidence-text">--%</div>
+                </div>
+                <div class="meter-status" id="confidence-status">AWAITING EVIDENCE</div>
+            </div>
+
+            <div class="telemetry-stats panel glass">
+                <h3>Investigation Telemetry</h3>
+                <ul class="stats-list">
+                    <li>
+                        <span class="stat-label">Trace ID</span>
+                        <span class="stat-value highlight" id="stat-trace">--</span>
+                    </li>
+                    <li>
+                        <span class="stat-label">Latency</span>
+                        <span class="stat-value" id="stat-latency">--s</span>
+                    </li>
+                    <li>
+                        <span class="stat-label">Agents Dispatched</span>
+                        <span class="stat-value" id="stat-agents">--</span>
+                    </li>
+                    <li>
+                        <span class="stat-label">Facts Validated</span>
+                        <span class="stat-value highlight-blue" id="stat-facts">--</span>
+                    </li>
+                    <li>
+                        <span class="stat-label">Termination Reason</span>
+                        <span class="stat-value" id="stat-reason">--</span>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Real-time Log Stream -->
+            <div class="live-logs panel glass">
+                <h3>Subroutine Logs</h3>
+                <div class="log-container" id="log-container">
+                    <div class="log-entry">Booting interface...</div>
+                    <div class="log-entry">Connecting to Gateway...</div>
+                    <div class="log-entry success">Connection Established.</div>
+                </div>
+            </div>
+        </aside>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
