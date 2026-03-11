@@ -2,7 +2,7 @@
 
 ### Sovereign Agent-to-Agent (A2A) Diagnostic Mesh
 
-**AegisMesh** is a local-first, privacy-preserving, autonomous multi-agent ecosystem engineered to diagnose system anomalies. It operates strictly within a local process boundary on consumer hardware (e.g., 16GB RAM / i5 CPU), utilizing a lightweight LangGraph supervisor, a specialized agent registry, and a deterministic EvidenceGraph for completely verifiable root-cause analysis.
+**AegisMesh** is a local-first, privacy-preserving, autonomous multi-agent ecosystem engineered to diagnose system anomalies. It operates strictly within a local process boundary on consumer hardware , utilizing a lightweight LangGraph supervisor, a specialized agent registry, and a deterministic EvidenceGraph for completely verifiable root-cause analysis.
 
 ---
 
